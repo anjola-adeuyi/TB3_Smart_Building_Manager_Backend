@@ -1,0 +1,9 @@
+{
+  "build": {
+    "type": "gradle",
+    "goal": "assemble"
+  },
+  "deploy": {
+    "jarName": "./build/libs/automacorp-0.0.1-SNAPSHOT.jar"
+  }
+}
