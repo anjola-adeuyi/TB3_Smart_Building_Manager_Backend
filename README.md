@@ -38,7 +38,17 @@ The application is currently deployed on Clever Cloud and can be accessed at:
 - Windows: `http://automacorp-anjola-adeuyi.cleverapps.io/api/windows`
 
 #### API Testing:
-*To be added - Information about testing the API, including links to API documentation or Swagger.*
+- **Information about testing the API, including links to API documentation or Swagger.**
+- 
+![assets/tests.png](assets/tests.png)
+
+## Mobile App Development
+
+![assets/andriod.png](assets/andriod.png)
+
+```Link to the Mobile App Development Repository
+https://github.com/anjola-adeuyi/tb3-android-app.git
+```
 
 ## Contributing
 Contributions to the TB3 Smart Building Manager Backend are immensely appreciated. If you're keen on improving or expanding the project, here are several ways you can participate:
