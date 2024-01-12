@@ -23,7 +23,7 @@ The application is currently deployed on Clever Cloud and can be accessed at:
 - **Entity Management**: Capability to manage entities by building or room, including deletion and control functions.
 
 ## Getting Started
-*To be added - Instructions for setting up and running the project locally, including environment setup, installation steps, etc.*
+The [backend repository](https://github.com/anjola-adeuyi/TB3_Smart_Building_Manager_Backend.git) as well as the corresponding [frontend vue.js repository](https://github.com/anjola-adeuyi/TB3_Smart_Building_Manager_Frontend_VueJS.git) are on GitHub, hosted on clevercloud at [automacorp-anjola-adeuyi.cleverapps.io](http://automacorp-anjola-adeuyi.cleverapps.io/) with a swagger docs API link at [automacorp-anjola-adeuyi.cleverapps.io/swagger-ui](https://automacorp-anjola-adeuyi.cleverapps.io/swagger-ui/index.html).
 
 ## Usage
 ### API Information
@@ -32,10 +32,10 @@ The application is currently deployed on Clever Cloud and can be accessed at:
 - User Role: Username - `user`, Password - `password`
 
 #### API EndPoints:
-- Buildings: `http://automacorp-anjola-adeuyi.cleverapps.io/api/buildings`
-- Rooms: `http://automacorp-anjola-adeuyi.cleverapps.io/api/rooms`
-- Heaters: `http://automacorp-anjola-adeuyi.cleverapps.io/api/heaters`
-- Windows: `http://automacorp-anjola-adeuyi.cleverapps.io/api/windows`
+- Buildings: [http://automacorp-anjola-adeuyi.cleverapps.io/api/buildings](http://automacorp-anjola-adeuyi.cleverapps.io/api/buildings)
+- Rooms: [http://automacorp-anjola-adeuyi.cleverapps.io/api/rooms](http://automacorp-anjola-adeuyi.cleverapps.io/api/rooms)
+- Heaters: [http://automacorp-anjola-adeuyi.cleverapps.io/api/heaters](http://automacorp-anjola-adeuyi.cleverapps.io/api/heaters)
+- Windows: [http://automacorp-anjola-adeuyi.cleverapps.io/api/windows](http://automacorp-anjola-adeuyi.cleverapps.io/api/windows)
 
 #### API Testing:
 - **Information about testing the API, including links to API documentation or Swagger.**
