@@ -17,6 +17,9 @@ TB3 Smart Building Manager Backend is a sophisticated application designed for m
 The application is currently deployed on Clever Cloud and can be accessed at:
 [http://automacorp-anjola-adeuyi.cleverapps.io/](http://automacorp-anjola-adeuyi.cleverapps.io/)
 
+![assets/tests.png](assets/tests.png)
+![assets/front-1.png](assets/front-1.png)
+
 ## Features
 - **User Roles**: Supports 'admin' and 'user' roles with secure login functionality.
 - **API Endpoints**: Admin users can access and manage entities like Buildings, Rooms, Heaters, and Windows.
