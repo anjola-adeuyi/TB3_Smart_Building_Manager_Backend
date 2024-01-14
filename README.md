@@ -26,7 +26,7 @@ The application is currently deployed on Clever Cloud and can be accessed at:
 - **Entity Management**: Capability to manage entities by building or room, including deletion and control functions.
 
 ## Getting Started
-The [backend repository](https://github.com/anjola-adeuyi/TB3_Smart_Building_Manager_Backend.git) as well as the corresponding [frontend vue.js repository](https://github.com/anjola-adeuyi/TB3_Smart_Building_Manager_Frontend_VueJS.git) are on GitHub, hosted on clevercloud at [automacorp-anjola-adeuyi.cleverapps.io](http://automacorp-anjola-adeuyi.cleverapps.io/) with a swagger docs API link at [automacorp-anjola-adeuyi.cleverapps.io/swagger-ui](https://automacorp-anjola-adeuyi.cleverapps.io/swagger-ui/index.html).
+The [backend repository](https://github.com/anjola-adeuyi/TB3_Smart_Building_Manager_Backend.git) as well as the corresponding [frontend vue.js repository](https://github.com/anjola-adeuyi/TB3_Smart_Building_Manager_Frontend_VueJS.git) are on GitHub, hosted on clevercloud at [automacorp-anjola-adeuyi.cleverapps.io](http://automacorp-anjola-adeuyi.cleverapps.io/) with a swagger docs API link at [automacorp-anjola-adeuyi.cleverapps.io/swagger-ui](https://automacorp-anjola-adeuyi.cleverapps.io/swagger-ui/index.html) and Java doc link at [Smart Building JavaDoc Link](https://anjola-adeuyi.github.io/TB3_Smart_Building_Manager_Backend).
 
 ## Usage
 ### API Information
