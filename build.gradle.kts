@@ -37,6 +37,17 @@ tasks.withType<Test> {
 	useJUnitPlatform()
 }
 
+tasks.javadoc {
+	source = sourceSets["main"].allJava
+	classpath = configurations["compileClasspath"]
+	options {
+		// Additional options can be set here
+		memberLevel = JavadocMemberLevel.PUBLIC
+		locale = "en_US"
+		encoding = "UTF-8"
+	}
+}
+
 tasks.withType<JavaCompile>().configureEach {
 	options.compilerArgs = options.compilerArgs + "-parameters"
 	options.errorprone {

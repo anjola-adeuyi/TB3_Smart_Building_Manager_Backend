@@ -3,6 +3,9 @@ package com.emse.spring.automacorp.model.entities;
 import jakarta.persistence.*;
 import java.util.List;
 
+/**
+ * Represents a building entity in the smart building management system.
+ */
 @Entity
 @Table(name = "SP_BUILDING")
 public class BuildingEntity {
@@ -19,10 +22,20 @@ public class BuildingEntity {
     @OneToMany(mappedBy = "building")
     private List<RoomEntity> rooms;
 
+    /**
+     * Default constructor for creating a new building entity.
+     */
     public BuildingEntity() {
         rooms = List.of();
     }
 
+    /**
+     * Creates a new building entity with the specified name, outside temperature sensor, and rooms.
+     *
+     * @param name The name of the building.
+     * @param outsideTemperature The outside temperature sensor associated with the building.
+     * @param rooms The list of rooms in the building.
+     */
     public BuildingEntity(String name, SensorEntity outsideTemperature, List<RoomEntity> rooms) {
         this();
         this.name = name;
