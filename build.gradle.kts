@@ -1,7 +1,11 @@
+import net.ltgt.gradle.errorprone.errorprone
+
 plugins {
 	java
 	id("org.springframework.boot") version "3.2.0"
 	id("io.spring.dependency-management") version "1.1.4"
+	id("net.ltgt.errorprone") version "3.1.0"
+	id("checkstyle")
 }
 
 group = "com.emse.spring"
@@ -25,8 +29,25 @@ dependencies {
 	implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0")
 	implementation("org.springframework.boot:spring-boot-starter-security")
 	testImplementation("org.springframework.security:spring-security-test")
+	val errorproneVersion = "2.23.0"
+	"errorprone"("com.google.errorprone:error_prone_core:$errorproneVersion")
 }
 
 tasks.withType<Test> {
 	useJUnitPlatform()
+}
+
+tasks.withType<JavaCompile>().configureEach {
+	options.compilerArgs = options.compilerArgs + "-parameters"
+	options.errorprone {
+		disableAllChecks.set(true)
+		error(
+				"MissingOverride",
+		)
+	}
+}
+
+checkstyle {
+	toolVersion = "10.11.0"
+	configFile = file("config/checkstyle.xml")
 }
