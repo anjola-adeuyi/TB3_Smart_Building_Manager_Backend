@@ -9,6 +9,26 @@ jobs:
   build-and-release:
     runs-on: ubuntu-latest
     steps:
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.0'
+          bundler-cache: true
+
+      - name: Install Changelog Generator
+        run: gem install github_changelog_generator
+
+      - name: Generate Changelog
+        run: github_changelog_generator --user anjola-adeuyi --project TB3_Smart_Building_Manager_Backend --token ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit Changelog
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add CHANGELOG.md
+          git commit -m "Update CHANGELOG.md for ${{ github.ref_name }}"
+          git push
+
       - name: Checkout repository
         uses: actions/checkout@v2
       - name: Set up JDK 17
