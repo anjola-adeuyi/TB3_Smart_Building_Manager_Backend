@@ -1,0 +1,8 @@
+com.emse.spring.automacorp
+com.emse.spring.automacorp.model
+com.emse.spring.automacorp.model.controllers
+com.emse.spring.automacorp.model.dao
+com.emse.spring.automacorp.model.entities
+com.emse.spring.automacorp.model.mappers
+com.emse.spring.automacorp.model.records.dao
+com.emse.spring.automacorp.model.records.dto

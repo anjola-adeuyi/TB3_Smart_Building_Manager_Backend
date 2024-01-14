@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_core/2.23.0/9c8bf286c1effbedaffe83e885a9680ca36a9b26/error_prone_core-2.23.0.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_check_api/2.23.0/da677c971caae606aed33294d7ceb89cd56a448d/error_prone_check_api-2.23.0.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotation/2.23.0/fb61dc1ac9972d3cb519c83eb6c9b37cbf8a76bf/error_prone_annotation-2.23.0.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_type_annotations/2.23.0/6d4e88342dfb4c1a2c90cc1735abd6e3e96d0a44/error_prone_type_annotations-2.23.0.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.pcollections/pcollections/3.1.4/e2a87923739024b4befa4701e6fe640af1e7d63e/pcollections-3.1.4.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.auto/auto-common/1.2.1/f6da26895f759010f5f170c8044e84c1b17ef83e/auto-common-1.2.1.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.inject/guice/5.1.0/da25056c694c54ba16e78e4fc35f17fc60f0d1b4/guice-5.1.0.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/32.1.1-jre/ad575652d84153075dd41ec6177ccb15251262b2/guava-32.1.1-jre.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.eisop/dataflow-errorprone/3.34.0-eisop1/3e9901aac15bca8023ba5930ee5a0428302b6197/dataflow-errorprone-3.34.0-eisop1.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.auto.value/auto-value-annotations/1.9/25a0fcef915f663679fcdb447541c5d86a9be4ba/auto-value-annotations-1.9.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.ben-manes.caffeine/caffeine/3.1.8/24795585df8afaf70a2cd534786904ea5889c047/caffeine-3.1.8.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.23.0/43a27853b6c7d54893e0b1997c2c778c347179eb/error_prone_annotations-2.23.0.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java/3.19.6/578a2070b8106d3ea350fc737e777262bdc796b1/protobuf-java-3.19.6.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.auto.service/auto-service-annotations/1.0.1/ac86dacc0eb9285ea9d42eee6aad8629ca3a7432/auto-service-annotations-1.0.1.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.java-diff-utils/java-diff-utils/4.12/1a712a91324d566eef39817fc5c9980eb10c21db/java-diff-utils-4.12.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.kevinstern/software-and-algorithms/1.0/5e77666b72c6c5dd583c36148d17fc47f944dfb5/software-and-algorithms-1.0.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0.1/1dcf1de382a0bf95a3d8b0849546c88bac1292c9/failureaccess-1.0.1.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/3.37.0/ba74746d38026581c12166e164bb3c15e90cc4ea/checker-qual-3.37.0.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar" />
+        </processorPath>
+        <module name="automacorp.test" />
+        <module name="automacorp.main" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="17" />
+  </component>
+</project>
