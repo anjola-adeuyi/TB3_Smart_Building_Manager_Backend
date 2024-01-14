@@ -27,7 +27,7 @@ jobs:
           git config --local user.name "GitHub Action"
           git add CHANGELOG.md
           git commit -m "Update CHANGELOG.md for ${{ github.ref_name }}"
-          git push
+          git push origin HEAD:actions
 
       - name: Checkout repository
         uses: actions/checkout@v2
