@@ -3,9 +3,11 @@ package com.emse.spring.automacorp.model.entities;
 import jakarta.persistence.*;
 import java.util.List;
 
+// Re-Design Database Schema
 /**
  * Represents a building entity in the smart building management system.
  */
+
 @Entity
 @Table(name = "SP_BUILDING")
 public class BuildingEntity {
