@@ -1,35 +1,18 @@
-import csv
+from add_headers import add_headers
 import os
 
-def add_headers(csv_file):
-    # Read the CSV file
-    with open(csv_file, 'r') as file:
-        reader = csv.reader(file)
-        rows = list(reader)
+def process_all_csv_files():
+    # Get the list of all files in the current directory
+    files = os.listdir()
 
-    # Infer column names based on data structure
-    headers = ['Time', 'Value']  # Default headers
+    # Filter out only the CSV files
+    csv_files = [file for file in files if file.endswith('.csv')]
+    print(csv_files)
 
-    # Update headers based on data analysis
-    if len(rows) > 0:
-        if len(rows[0]) >= 2:
-            headers[1] = 'Temperature'  # Assuming the second column is temperature
+    # Process each CSV file
+    for csv_file in csv_files:
+        print(csv_file)
+        add_headers(csv_file)
 
-    # Add headers to the data
-    rows.insert(0, headers)
-
-    # Create a new directory if it doesn't exist
-    directory = 'processed_datasets'
-    if not os.path.exists(directory):
-        os.makedirs(directory)
-
-    # Write the modified data to a new CSV file in the processed_datasets folder
-    new_file = os.path.join(directory, os.path.basename(csv_file))
-    with open(new_file, 'w', newline='') as file:
-        writer = csv.writer(file)
-        writer.writerows(rows)
-
-    print(f"Headers added to {csv_file}. New file saved as {new_file}")
-
-# Example usage
-add_headers('log-2ET-221.csv')
+# Call the function to process all CSV files
+process_all_csv_files()
