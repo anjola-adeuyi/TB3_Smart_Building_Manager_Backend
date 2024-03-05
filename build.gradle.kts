@@ -28,6 +28,7 @@ dependencies {
 	implementation("com.h2database:h2") // libs to use a H2 database
 	implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0")
 	implementation("org.springframework.boot:spring-boot-starter-security")
+	implementation("com.opencsv:opencsv:5.7.1") // Add this line to include opencsv
 	testImplementation("org.springframework.security:spring-security-test")
 	val errorproneVersion = "2.23.0"
 	"errorprone"("com.google.errorprone:error_prone_core:$errorproneVersion")
