@@ -3,6 +3,9 @@ package com.emse.spring.automacorp.model;
 import jakarta.persistence.*;
 import org.hibernate.dialect.function.CommonFunctionFactory;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 @Entity
 @Table
 public class Measurement {
@@ -19,6 +22,11 @@ public class Measurement {
     private Integer id;
     private String time;
     private String temperature;
+
+    public LocalDateTime getParsedTime() {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        return LocalDateTime.parse(this.time, formatter);
+    }
 
     public Measurement() {
     }

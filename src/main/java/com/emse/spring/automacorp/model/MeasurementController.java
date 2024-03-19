@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
+import java.util.List;
 
 @CrossOrigin
 @RestController
@@ -25,9 +26,21 @@ public class MeasurementController {
     }
 
     @PostMapping(value = "/upload", consumes = {"multipart/form-data"})
-    public ResponseEntity<Integer> uploadStudents(
+    public ResponseEntity<Integer> uploadMeasurements(
             @RequestPart("file") MultipartFile file
     ) throws IOException {
         return ResponseEntity.ok(service.uploadMeasurement(file));
+    }
+
+    @GetMapping("/measurements")
+    public ResponseEntity<List<Measurement>> getAllMeasurements() {
+        List<Measurement> measurements = service.getAllMeasurements();
+        return ResponseEntity.ok(measurements);
+    }
+
+    @GetMapping("/time-range")
+    public ResponseEntity<TimeRange> getTimeRange() {
+        TimeRange timeRange = service.getTimeRange();
+        return ResponseEntity.ok(timeRange);
     }
 }
