@@ -105,9 +105,18 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#uploadMeasurement(org.springframework.web.multipart.MultipartFile)" class="member-name-link">uploadMeasurement</a><wbr>(org.springframework.web.multipart.MultipartFile&nbsp;file)</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="Measurement.html" title="class in com.emse.spring.automacorp.model">Measurement</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getAllMeasurements()" class="member-name-link">getAllMeasurements</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/LocalDateTime.html" title="class or interface in java.time" class="external-link">LocalDateTime</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getAllMeasurementTimes()" class="member-name-link">getAllMeasurementTimes</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="TimeRange.html" title="class in com.emse.spring.automacorp.model">TimeRange</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getTimeRange()" class="member-name-link">getTimeRange</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#uploadMeasurement(org.springframework.web.multipart.MultipartFile)" class="member-name-link">uploadMeasurement</a><wbr>(org.springframework.web.multipart.MultipartFile&nbsp;file)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -148,6 +157,25 @@ loadScripts(document, 'script');</script>
 <dt>Throws:</dt>
 <dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/IOException.html" title="class or interface in java.io" class="external-link">IOException</a></code></dd>
 </dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getAllMeasurements()">
+<h3>getAllMeasurements</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="Measurement.html" title="class in com.emse.spring.automacorp.model">Measurement</a>&gt;</span>&nbsp;<span class="element-name">getAllMeasurements</span>()</div>
+</section>
+</li>
+<li>
+<section class="detail" id="getAllMeasurementTimes()">
+<h3>getAllMeasurementTimes</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/LocalDateTime.html" title="class or interface in java.time" class="external-link">LocalDateTime</a>&gt;</span>&nbsp;<span class="element-name">getAllMeasurementTimes</span>()</div>
+</section>
+</li>
+<li>
+<section class="detail" id="getTimeRange()">
+<h3>getTimeRange</h3>
+<div class="member-signature"><span class="annotations">@Transactional(readOnly=true)
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="TimeRange.html" title="class in com.emse.spring.automacorp.model">TimeRange</a></span>&nbsp;<span class="element-name">getTimeRange</span>()</div>
 </section>
 </li>
 </ul>
